@@ -1,0 +1,365 @@
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 120px 20px 100px;
+
+  background:
+    radial-gradient(circle at top left, #2563eb 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #1d4ed8 0%, transparent 35%),
+    linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+
+  color: white;
+}
+
+/* =========================================================
+   BACKGROUND SHAPES
+========================================================= */
+
+.hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.2;
+}
+
+.hero-shape-1 {
+  width: 350px;
+  height: 350px;
+
+  background: #38bdf8;
+
+  top: -100px;
+  left: -100px;
+}
+
+.hero-shape-2 {
+  width: 300px;
+  height: 300px;
+
+  background: #818cf8;
+
+  bottom: -80px;
+  right: -80px;
+}
+
+.hero-shape-3 {
+  width: 220px;
+  height: 220px;
+
+  background: #06b6d4;
+
+  top: 40%;
+  right: 20%;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 1150px;
+  margin: auto;
+  text-align: center;
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 22px;
+
+  margin-bottom: 28px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #dbeafe;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.hero-title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 1.05;
+  font-weight: 800;
+
+  margin-bottom: 26px;
+
+  letter-spacing: -2px;
+}
+
+.hero-title span {
+  background: linear-gradient(135deg, #67e8f9, #ffffff);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.hero-subtitle {
+  max-width: 760px;
+
+  margin: 0 auto 50px;
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.hero-search-box {
+  background: rgba(255, 255, 255, 0.12);
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(18px);
+
+  border-radius: 28px;
+
+  padding: 20px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  margin-bottom: 60px;
+}
+
+.hero-search-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+
+  gap: 18px;
+}
+
+/* =========================================================
+   INPUT GROUP
+========================================================= */
+
+.hero-input-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  padding: 16px 20px;
+
+  border-radius: 22px;
+
+  transition: all 0.25s ease;
+}
+
+.hero-input-group:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hero-input-icon {
+  font-size: 20px;
+  color: #2563eb;
+}
+
+.hero-input-wrapper {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-input-wrapper label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #64748b;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-input-wrapper input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.hero-input-wrapper input::placeholder {
+  color: #94a3b8;
+}
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+.hero-search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 0 34px;
+
+  border: none;
+  border-radius: 22px;
+
+  background: linear-gradient(135deg, #06b6d4, #2563eb);
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.hero-search-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+}
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero-stat-card {
+  padding: 28px;
+
+  border-radius: 26px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(16px);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.hero-stat-card:hover {
+  transform: translateY(-5px);
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-stat-card h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  margin-bottom: 10px;
+}
+
+.hero-stat-card p {
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+  .hero-search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-search-btn {
+    height: 64px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 90px 16px 70px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-search-box {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .hero-input-group {
+    padding: 14px 16px;
+  }
+
+  .hero-stat-card {
+    padding: 22px;
+  }
+
+  .hero-stat-card h3 {
+    font-size: 2rem;
+  }
+}
