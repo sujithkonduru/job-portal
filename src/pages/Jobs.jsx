@@ -4,7 +4,6 @@ import Loader from "../components/Loader";
 
 import {
   FaSearch,
-  FaFilter,
   FaTimes,
   FaMapMarkerAlt,
   FaBriefcase,
